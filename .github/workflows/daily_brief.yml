@@ -1,0 +1,6 @@
+on:
+  schedule:
+    # 7:00 UTC = 8:00 AM Morocco
+    # 18:00 UTC = 7:00 PM Morocco
+    - cron: '0 7,18 * * *'
+  workflow_dispatch: # Keeps the manual run button
